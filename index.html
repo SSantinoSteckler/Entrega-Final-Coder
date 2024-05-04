@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de Imagenes</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/220201e61eda740cba8fd18be08224f8-linda-silueta-de-escucha-de-loro.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="header-search">
+      <div>
+        <img
+          src="./assets/220201e61eda740cba8fd18be08224f8-linda-silueta-de-escucha-de-loro.png"
+          alt=""
+        />
+        <h1>Parrot</h1>
+      </div>
+
+      <form id="form-search">
+        <div>
+          <svg
+            class="icon-search"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg>
+          <input type="text" id="input-search" placeholder="Busca Imagenes" />
+        </div>
+
+        <div class="form-search-div-gurdados">
+          <button class="display-none">buscar</button>
+          <button class="button-header" id="a-guardado">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"
+              />
+            </svg>
+            Mis Guardados
+          </button>
+        </div>
+      </form>
+    </header>
+    <main>
+      <section class="gallery" id="gallery"></section>
+      <section class="gallery-guardado" id="gallery-guardados"></section>
+
+      <div id="button-div" class="button-div-mas"></div>
+      <div class="modal-mode">
+        <div class="modal-window">
+          <span class="modal-close"></span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h2>NewsLetter</h2>
+        <div>
+          <input type="text" placeholder="Recibe noticias!" />
+          <button>enviar</button>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+          ratione, explicabo eius sunt quidem qui mollitia tenetur dignissimos
+          consequuntur, consequatur aliquid distinctio magnam perferendis
+          doloribus vel error rerum autem dolorum!
+        </p>
+      </div>
+      <div>
+        <h3>
+          Create by
+          <a target="_blank" href="https://github.com/SSantinoSteckler"
+            >GitHub SantinoSteckler</a
+          >
+        </h3>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
